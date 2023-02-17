@@ -3,12 +3,29 @@
     padding: 0;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: darkgreen;
+    flex: 1;
+}
+
 header{
     background-color: aquamarine;
     height: 40px;
     width: 100%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header span{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 footer{
@@ -16,4 +33,19 @@ footer{
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: grid;
     place-items: center;
+}
+
+footer ul li{
+    margin: 8px;
+    list-style: none;
+}
+
+.ti1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.te {
+    padding: 20%;
 }
